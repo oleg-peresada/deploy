@@ -21,3 +21,4 @@ deploy_script:
   - docker login -u=$DOCKER_USER -p=$DOCKER_PASS
   - docker tag deploy/app:coreapp peresadaoleg/olegperesada:coreapp
   - docker push peresadaoleg/olegperesada:coreapp
+  - ssh
