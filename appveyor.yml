@@ -1,0 +1,15 @@
+version: 1.0.{build}
+image: Ubuntu
+
+install:
+  - docker version
+
+build_script:
+  - docker build -t deploy/app .
+
+# test_script:
+#   - docker run me/myfavoriteapp
+
+# deploy_script:
+#   - docker login -u="$env:DOCKER_USER" -p="$env:DOCKER_PASS"
+#   - docker push me/myfavoriteapp
