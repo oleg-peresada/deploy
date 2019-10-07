@@ -14,8 +14,8 @@ install:
 build_script:
   - docker build -t deploy/app:coreapp .
 
-test_script:
-  - docker run me/myfavoriteapp
+# test_script:
+#   - docker run me/myfavoriteapp
 
 deploy_script:
   - docker login -u=$DOCKER_USER -p=$DOCKER_PASS
