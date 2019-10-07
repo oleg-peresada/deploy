@@ -18,6 +18,6 @@ build_script:
 #   - docker run me/myfavoriteapp
 
 deploy_script:
-  - docker login -u=$DOCKER_USER -p=$DOCKER_PASS
+  - docker login -u=$DOCKER_USER --password-stdin
   - docker tag deploy/app:coreapp peresadaoleg/olegperesada:coreapp
   - docker push peresadaoleg/olegperesada:coreapp
