@@ -9,7 +9,7 @@ environment:
 
 install:
   - docker version
-  - cinst docker-compose
+  # - cinst docker-compose
 
 build_script:
   - docker build -t deploy/app:coreapp .
