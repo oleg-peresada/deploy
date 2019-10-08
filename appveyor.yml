@@ -10,7 +10,7 @@ environment:
 
 install:
   - docker version
-  - ps: cinst docker-compose
+  - ps: choco install docker-compose
 
 build_script:
   - docker build -t deploy/app:coreapp .
