@@ -7,10 +7,9 @@ environment:
   DOCKER_PASS:
     secure: T5atRDJZWwSIN1388pnTqw==
 
-
 install:
   - docker version
-  - ps: choco install docker-compose
+  - cinst docker-compose
 
 build_script:
   - docker build -t deploy/app:coreapp .
