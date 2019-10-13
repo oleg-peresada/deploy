@@ -9,6 +9,7 @@ namespace deploy
   [TestFixture]
   public class Class
   {
+    [Test]
     public void TestMethodFoo_False()
     {
       Assert.False(true);

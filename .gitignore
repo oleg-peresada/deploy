@@ -5,3 +5,5 @@
 /obj/Debug/netcoreapp3.0/deploy.assets.cache
 /obj/Debug/netcoreapp3.0/deploy.assets.cache
 /obj/Debug/netcoreapp3.0/deploy.assets.cache
+/obj*
+/bin*
