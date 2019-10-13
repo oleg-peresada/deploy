@@ -10,6 +10,8 @@ WORKDIR /app
 
 RUN dotnet publish -c Release -r linux-musl-x64 --self-contained=false -o test2
 
+RUN dotnet test --no-build --no-restore -o test2
+
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.0-alpine AS runtime
 WORKDIR /app
 COPY --from=build /app/test2 ./
